@@ -1,5 +1,3 @@
-import 'package:api_course/home_screen.dart';
-import 'package:api_course/photo.dart';
 import 'package:api_course/user.dart';
 import 'package:flutter/material.dart';
 

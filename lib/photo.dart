@@ -12,7 +12,6 @@ class PhotoScreen extends StatefulWidget {
 }
 
 class _PhotoScreenState extends State<PhotoScreen> {
-  @override
   List<Photos> photosList = [];
 
   Future<List<Photos>> getPhotos() async {
@@ -31,10 +30,11 @@ class _PhotoScreenState extends State<PhotoScreen> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("API Photo"),
+        title: const Text("API Photo"),
       ),
       body: Column(
         children: [

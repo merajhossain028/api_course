@@ -12,7 +12,6 @@ class UserScreen extends StatefulWidget {
 }
 
 class _UserScreenState extends State<UserScreen> {
-  @override
   List<UserModel> userList = [];
 
   Future<List<UserModel>> getUserApi() async {
@@ -27,6 +26,7 @@ class _UserScreenState extends State<UserScreen> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

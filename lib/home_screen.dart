@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:api_course/models/posts_model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -40,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
               future: getPostApi(),
               builder: (context, snapshot) {
                 if (!snapshot.hasData) {
-                  return Text("Loading");
+                  return const Text("Loading");
                 } else {
                   return ListView.builder(
                     itemCount: postList.length,
