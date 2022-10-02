@@ -1,3 +1,6 @@
+import 'package:api_course/example_four.dart';
+import 'package:api_course/last_example.dart';
+import 'package:api_course/sign_up.dart';
 import 'package:api_course/user.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const UserScreen(),
+      home: const SignUpScreen(),
     );
   }
 }
